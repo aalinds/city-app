@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Otp.css';
 import OtpInput from 'react-otp-input';
-
+import styles from './Otp.module.css';
 class Otp extends Component {
 	constructor(props) {
 		super(props);
@@ -11,21 +10,27 @@ class Otp extends Component {
 		};
 	}
 
+	handleChange = (val) => {
+		this.setState({
+			otp: val,
+		});
+	};
+
 	render() {
 		return (
-			<div className='main'>
-				<div className='login-container'>
-					<form className='login-form'>
-						<div className='logo-wrap'>
-							<Link to='/' className='logo'>
+			<div className={styles.main}>
+				<div className={styles['login-container']}>
+					<form className={styles['login-form']}>
+						<div className={styles['logo-wrap']}>
+							<Link to='/' className={styles.logo}>
 								<img
 									src='https://web.mydukaan.io/images/logo.svg'
 									alt='company logo'
 								/>
 							</Link>
 						</div>
-						<div className='heading'>Verify OTP</div>
-						<p className='text-1'>
+						<div className={styles.heading}>Verify OTP</div>
+						<p className={styles['text-1']}>
 							Enter OTP sent to you at
 							<br />
 							<span style={{ color: '#1a181e', fontWeight: '500' }}>
@@ -36,13 +41,16 @@ class Otp extends Component {
 							<label htmlFor='mobile'>OTP</label>
 							<OtpInput
 								value={this.state.otp}
-								// onChange={this.handleChange}
+								onChange={this.handleChange}
 								numInputs={6}
 								containerStyle={{ justifyContent: 'space-between' }}
-								inputStyle='otp-box'
+								inputStyle={styles['otp-box']}
 							/>
 						</div>
-						<button className='btn btn-primary' disabled>
+						<button
+							className={`btn btn-primary ${styles['verify-btn']}`}
+							disabled
+						>
 							Verify
 						</button>
 					</form>
