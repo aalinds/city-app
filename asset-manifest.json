@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/city-app/static/css/main.3cdaaa4d.chunk.css",
+    "main.js": "/city-app/static/js/main.dac70f28.chunk.js",
+    "main.js.map": "/city-app/static/js/main.dac70f28.chunk.js.map",
+    "runtime-main.js": "/city-app/static/js/runtime-main.01c0e219.js",
+    "runtime-main.js.map": "/city-app/static/js/runtime-main.01c0e219.js.map",
+    "static/css/2.8c0e6b67.chunk.css": "/city-app/static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.46cf8db6.chunk.js": "/city-app/static/js/2.46cf8db6.chunk.js",
+    "static/js/2.46cf8db6.chunk.js.map": "/city-app/static/js/2.46cf8db6.chunk.js.map",
+    "index.html": "/city-app/index.html",
+    "static/css/2.8c0e6b67.chunk.css.map": "/city-app/static/css/2.8c0e6b67.chunk.css.map",
+    "static/css/main.3cdaaa4d.chunk.css.map": "/city-app/static/css/main.3cdaaa4d.chunk.css.map",
+    "static/js/2.46cf8db6.chunk.js.LICENSE.txt": "/city-app/static/js/2.46cf8db6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01c0e219.js",
+    "static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.46cf8db6.chunk.js",
+    "static/css/main.3cdaaa4d.chunk.css",
+    "static/js/main.dac70f28.chunk.js"
+  ]
+}
