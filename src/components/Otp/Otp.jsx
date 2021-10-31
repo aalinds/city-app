@@ -37,7 +37,7 @@ class Otp extends Component {
 								+91-8888888888
 							</span>
 						</p>
-						<div className='form-group'>
+						<div className={styles['form-group']}>
 							<label htmlFor='mobile'>OTP</label>
 							<OtpInput
 								value={this.state.otp}
