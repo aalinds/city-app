@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 
 function App() {
 	return (
-		<div>
+		<div className='container-liquid'>
 			<Switch>
 				<Route path='/otp' component={Otp} />
 				<Route exact path='/' component={Login} />
