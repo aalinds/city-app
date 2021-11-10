@@ -38,13 +38,13 @@ const Login = () => {
 					/>
 				</Link>
 				<h1 className='h3 mb-5 font-weight-normal'>Log in</h1>
-				<label htmlFor='mobile' className='sr-only'>
+				<label htmlFor='mobile' className='mb-2'>
 					Mobile number
 				</label>
 				<input
 					type='text'
 					id='mobile'
-					className={`form-control mb-4`}
+					className={`form-control mb-4 ${styles['mobile-input']}`}
 					placeholder='Enter mobile number'
 					required
 					autoFocus

@@ -12,6 +12,11 @@
 	background-color: white;
 }
 
+.mobile-input {
+	font-size: 18px;
+	padding: 11px 16px;
+}
+
 .login-btn {
 	font-size: 18px;
 	font-weight: 500;
