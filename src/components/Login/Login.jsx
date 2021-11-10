@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Login.module.css';
 
 const Login = () => {
+	const [mobile, setMobile] = useState('');
+	const [formValidated, setFormValidated] = useState(false);
+
+	const mobileValidation = (mobile) => {
+		if (mobile.length !== 10) return false;
+
+		return true;
+	};
+
+	const onMobileChange = (e) => {
+		let mobileNumber = e.target.value;
+		let mobileRegex = /^[0-9]*$/;
+
+		if (!mobileRegex.test(mobileNumber)) return;
+
+		setMobile(mobileNumber);
+	};
+
+	useEffect(() => {
+		mobileValidation(mobile) ? setFormValidated(true) : setFormValidated(false);
+	}, [mobile]);
+
 	return (
 		<div className={`d-flex ${styles.parent}`}>
 			<form className={`${styles['form-signin']}`}>
@@ -24,12 +46,15 @@ const Login = () => {
 					id='mobile'
 					className={`form-control mb-4`}
 					placeholder='Enter mobile number'
-					required=''
-					autofocus=''
+					required
+					autoFocus
+					value={mobile}
+					onChange={onMobileChange}
 				/>
 				<button
 					className={`btn btn-primary btn-lg ${styles['login-btn']}`}
 					type='submit'
+					disabled={!formValidated}
 				>
 					Log in
 				</button>
