@@ -7,7 +7,7 @@ function Layout(props) {
 		<div>
 			<div style={{ display: 'flex' }}>
 				<Sidebar history={props.history} />
-				<div style={{ maxWidth: '800px' }}>
+				<div style={{ flexGrow: '100' }}>
 					<Nav />
 					{props.children}
 				</div>
