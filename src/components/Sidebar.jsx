@@ -32,6 +32,9 @@ function Sidebar(props, { defaultActive }) {
 
 	return (
 		<SidebarParent>
+			<Logo>
+				<img src='https://web.mydukaan.io/images/logo.svg' alt='logo' />
+			</Logo>
 			{SidebarItems.map((item, index) => {
 				return (
 					<Link
@@ -57,6 +60,10 @@ const SidebarParent = styled.div`
 	height: 100vh;
 `;
 
+const Logo = styled.div`
+	margin: 24px;
+`;
+
 const SidebarItem = styled.div`
 	padding: 1px 15px;
 	transition: all 0.25s ease-in-out;
@@ -66,9 +73,11 @@ const SidebarItem = styled.div`
 	border-radius: 4px;
 
 	p {
+		font-family: sans-serif;
 		color: white;
 		font-weight: bold;
-		text-decoration: none;
+		font-size: 15px;
+		// text-decoration: none;
 	}
 
 	&:hover {
