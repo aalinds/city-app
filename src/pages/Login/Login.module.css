@@ -14,7 +14,7 @@
 
 .mobile-input {
 	font-size: 18px;
-	padding: 11px 16px;
+	padding: 11px 16px !important;
 }
 
 .login-btn {
